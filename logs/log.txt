@@ -1,0 +1,66 @@
+{"level":"info","timestamp":"2025-06-02T00:41:50.006+0300","caller":"app/app.go:60","msg":"API server started successfully on port 3000","pid":32024}
+{"level":"info","timestamp":"2025-06-02T00:42:01.223+0300","caller":"app/app.go:66","msg":"Shutting down server...","pid":32024}
+{"level":"info","timestamp":"2025-06-02T00:45:16.999+0300","caller":"app/app.go:38","msg":"Connected to database successfully","pid":32830}
+{"level":"info","timestamp":"2025-06-02T00:45:16.999+0300","caller":"app/app.go:61","msg":"API server started successfully on port 3000","pid":32830}
+{"level":"info","timestamp":"2025-06-02T00:46:29.836+0300","caller":"app/app.go:67","msg":"Shutting down server...","pid":32830}
+{"level":"info","timestamp":"2025-06-02T00:48:32.925+0300","caller":"app/app.go:38","msg":"Connected to database successfully","pid":33676}
+{"level":"info","timestamp":"2025-06-02T00:48:32.925+0300","caller":"app/app.go:61","msg":"API server started successfully on port 3000","pid":33676}
+{"level":"info","timestamp":"2025-06-02T00:48:34.245+0300","caller":"app/app.go:67","msg":"Shutting down server...","pid":33676}
+{"level":"info","timestamp":"2025-06-02T00:48:34.245+0300","caller":"server/server.go:42","msg":"Shutdown completed before timeout.","pid":33676}
+{"level":"info","timestamp":"2025-06-02T00:49:19.118+0300","caller":"app/app.go:38","msg":"Connected to database successfully","pid":33842}
+{"level":"info","timestamp":"2025-06-02T00:49:19.118+0300","caller":"app/app.go:61","msg":"API server started successfully on port 3000","pid":33842}
+{"level":"error","timestamp":"2025-06-02T00:49:53.845+0300","caller":"quotesService/createQuote.go:15","msg":"Error with parsing JSON: EOF","pid":33842}
+{"level":"info","timestamp":"2025-06-02T00:50:07.925+0300","caller":"app/app.go:67","msg":"Shutting down server...","pid":33842}
+{"level":"info","timestamp":"2025-06-02T00:50:07.925+0300","caller":"server/server.go:42","msg":"Shutdown completed before timeout.","pid":33842}
+{"level":"info","timestamp":"2025-06-02T00:50:28.628+0300","caller":"app/app.go:38","msg":"Connected to database successfully","pid":34141}
+{"level":"info","timestamp":"2025-06-02T00:50:28.628+0300","caller":"app/app.go:61","msg":"API server started successfully on port 3000","pid":34141}
+{"level":"error","timestamp":"2025-06-02T00:50:33.606+0300","caller":"quotesService/createQuote.go:15","msg":"Error with parsing JSON: EOF","pid":34141}
+{"level":"info","timestamp":"2025-06-02T00:51:53.282+0300","caller":"app/app.go:67","msg":"Shutting down server...","pid":34141}
+{"level":"info","timestamp":"2025-06-02T00:51:53.282+0300","caller":"server/server.go:42","msg":"Shutdown completed before timeout.","pid":34141}
+{"level":"info","timestamp":"2025-06-02T00:53:46.541+0300","caller":"app/app.go:38","msg":"Connected to database successfully","pid":34868}
+{"level":"info","timestamp":"2025-06-02T00:53:46.541+0300","caller":"app/app.go:61","msg":"API server started successfully on port 3000","pid":34868}
+{"level":"info","timestamp":"2025-06-02T00:53:54.874+0300","caller":"app/app.go:67","msg":"Shutting down server...","pid":34868}
+{"level":"info","timestamp":"2025-06-02T00:53:54.874+0300","caller":"server/server.go:42","msg":"Shutdown completed before timeout.","pid":34868}
+{"level":"info","timestamp":"2025-06-02T00:54:16.116+0300","caller":"app/app.go:38","msg":"Connected to database successfully","pid":35489}
+{"level":"info","timestamp":"2025-06-02T00:54:16.117+0300","caller":"app/app.go:61","msg":"API server started successfully on port 8080","pid":35489}
+{"level":"error","timestamp":"2025-06-02T00:54:20.094+0300","caller":"quotesService/createQuote.go:18","msg":"Error with parsing JSON: EOF","pid":35489}
+{"level":"error","timestamp":"2025-06-02T00:55:09.260+0300","caller":"quotesService/createQuote.go:18","msg":"Error with parsing JSON: EOF","pid":35489}
+{"level":"error","timestamp":"2025-06-02T00:56:30.795+0300","caller":"quotesService/getAllQuotes.go:15","msg":"Error while getting all quotesfailed to connect to `user=nedokyrill database=`: /var/run/postgresql/.s.PGSQL.5432 (/var/run/postgresql): server error: FATAL: role \"nedokyrill\" does not exist (SQLSTATE 28000)","pid":35489}
+{"level":"error","timestamp":"2025-06-02T00:56:39.861+0300","caller":"quotesService/getRandomQuote.go:12","msg":"Error while getting random quotefailed to connect to `user=nedokyrill database=`: /var/run/postgresql/.s.PGSQL.5432 (/var/run/postgresql): server error: FATAL: role \"nedokyrill\" does not exist (SQLSTATE 28000)","pid":35489}
+{"level":"info","timestamp":"2025-06-02T00:57:06.761+0300","caller":"app/app.go:67","msg":"Shutting down server...","pid":35489}
+{"level":"info","timestamp":"2025-06-02T00:57:06.761+0300","caller":"server/server.go:42","msg":"Shutdown completed before timeout.","pid":35489}
+{"level":"info","timestamp":"2025-06-02T00:57:49.612+0300","caller":"app/app.go:38","msg":"Connected to database successfully","pid":36017}
+{"level":"info","timestamp":"2025-06-02T00:57:49.612+0300","caller":"app/app.go:61","msg":"API server started successfully on port 8080","pid":36017}
+{"level":"error","timestamp":"2025-06-02T00:58:18.741+0300","caller":"quotesService/getRandomQuote.go:12","msg":"Error while getting random quote: failed to connect to `user=nedokyrill database=`: /var/run/postgresql/.s.PGSQL.5432 (/var/run/postgresql): server error: FATAL: role \"nedokyrill\" does not exist (SQLSTATE 28000)","pid":36017}
+{"level":"info","timestamp":"2025-06-02T01:00:46.572+0300","caller":"app/app.go:67","msg":"Shutting down server...","pid":36017}
+{"level":"info","timestamp":"2025-06-02T01:00:46.572+0300","caller":"server/server.go:42","msg":"Shutdown completed before timeout.","pid":36017}
+{"level":"info","timestamp":"2025-06-02T01:00:47.706+0300","caller":"app/app.go:38","msg":"Connected to database successfully","pid":36351}
+{"level":"info","timestamp":"2025-06-02T01:00:47.706+0300","caller":"app/app.go:61","msg":"API server started successfully on port 8080","pid":36351}
+{"level":"error","timestamp":"2025-06-02T01:00:51.781+0300","caller":"quotesService/getRandomQuote.go:12","msg":"Error while getting random quote: failed to connect to `user=nedokyrill database=`: /var/run/postgresql/.s.PGSQL.5432 (/var/run/postgresql): server error: FATAL: role \"nedokyrill\" does not exist (SQLSTATE 28000)","pid":36351}
+{"level":"info","timestamp":"2025-06-02T01:00:57.039+0300","caller":"app/app.go:67","msg":"Shutting down server...","pid":36351}
+{"level":"info","timestamp":"2025-06-02T01:00:57.039+0300","caller":"server/server.go:42","msg":"Shutdown completed before timeout.","pid":36351}
+{"level":"info","timestamp":"2025-06-02T01:01:07.381+0300","caller":"app/app.go:38","msg":"Connected to database successfully","pid":36550}
+{"level":"info","timestamp":"2025-06-02T01:01:07.381+0300","caller":"app/app.go:61","msg":"API server started successfully on port 8080","pid":36550}
+{"level":"error","timestamp":"2025-06-02T01:01:09.731+0300","caller":"quotesService/getRandomQuote.go:12","msg":"Error while getting random quote: failed to connect to `user=nedokyrill database=`: /var/run/postgresql/.s.PGSQL.5432 (/var/run/postgresql): server error: FATAL: role \"nedokyrill\" does not exist (SQLSTATE 28000)","pid":36550}
+{"level":"info","timestamp":"2025-06-02T01:02:04.177+0300","caller":"app/app.go:67","msg":"Shutting down server...","pid":36550}
+{"level":"info","timestamp":"2025-06-02T01:02:04.177+0300","caller":"server/server.go:42","msg":"Shutdown completed before timeout.","pid":36550}
+{"level":"info","timestamp":"2025-06-02T01:02:05.036+0300","caller":"app/app.go:38","msg":"Connected to database successfully","pid":36779}
+{"level":"info","timestamp":"2025-06-02T01:02:05.036+0300","caller":"app/app.go:61","msg":"API server started successfully on port 8080","pid":36779}
+{"level":"error","timestamp":"2025-06-02T01:02:18.280+0300","caller":"quotesService/getRandomQuote.go:12","msg":"Error while getting random quote: failed to connect to `user=nedokyrill database=`: /var/run/postgresql/.s.PGSQL.5432 (/var/run/postgresql): server error: FATAL: role \"nedokyrill\" does not exist (SQLSTATE 28000)","pid":36779}
+{"level":"info","timestamp":"2025-06-02T01:02:37.232+0300","caller":"app/app.go:67","msg":"Shutting down server...","pid":36779}
+{"level":"info","timestamp":"2025-06-02T01:02:37.232+0300","caller":"server/server.go:42","msg":"Shutdown completed before timeout.","pid":36779}
+{"level":"info","timestamp":"2025-06-02T01:02:39.076+0300","caller":"app/app.go:38","msg":"Connected to database successfully","pid":37369}
+{"level":"info","timestamp":"2025-06-02T01:02:39.076+0300","caller":"app/app.go:61","msg":"API server started successfully on port 8080","pid":37369}
+{"level":"error","timestamp":"2025-06-02T01:02:44.893+0300","caller":"quotesService/getRandomQuote.go:12","msg":"Error while getting random quote: failed to connect to `user=nedokyrill database=`: /var/run/postgresql/.s.PGSQL.5432 (/var/run/postgresql): server error: FATAL: role \"nedokyrill\" does not exist (SQLSTATE 28000)","pid":37369}
+{"level":"info","timestamp":"2025-06-02T01:04:07.144+0300","caller":"app/app.go:67","msg":"Shutting down server...","pid":37369}
+{"level":"info","timestamp":"2025-06-02T01:04:07.145+0300","caller":"server/server.go:42","msg":"Shutdown completed before timeout.","pid":37369}
+{"level":"info","timestamp":"2025-06-02T01:04:08.475+0300","caller":"app/app.go:38","msg":"Connected to database successfully","pid":38039}
+{"level":"info","timestamp":"2025-06-02T01:04:08.475+0300","caller":"app/app.go:61","msg":"API server started successfully on port 8080","pid":38039}
+{"level":"error","timestamp":"2025-06-02T01:04:17.287+0300","caller":"quotesService/getRandomQuote.go:12","msg":"Error while getting random quote: failed to connect to `user=nedokyrill database=`: /var/run/postgresql/.s.PGSQL.5432 (/var/run/postgresql): server error: FATAL: role \"nedokyrill\" does not exist (SQLSTATE 28000)","pid":38039}
+{"level":"info","timestamp":"2025-06-02T01:05:31.266+0300","caller":"app/app.go:67","msg":"Shutting down server...","pid":38039}
+{"level":"info","timestamp":"2025-06-02T01:05:31.268+0300","caller":"server/server.go:42","msg":"Shutdown completed before timeout.","pid":38039}
+{"level":"info","timestamp":"2025-06-02T01:06:43.805+0300","caller":"app/app.go:36","msg":"Connected to database successfully","pid":4361}
+{"level":"info","timestamp":"2025-06-02T01:06:43.805+0300","caller":"app/app.go:59","msg":"API server started successfully on port 8080","pid":4361}
+{"level":"error","timestamp":"2025-06-02T01:06:59.711+0300","caller":"quotesService/getRandomQuote.go:12","msg":"Error while getting random quote: failed to connect to `user=nedokyrill database=`: /var/run/postgresql/.s.PGSQL.5432 (/var/run/postgresql): server error: FATAL: role \"nedokyrill\" does not exist (SQLSTATE 28000)","pid":4361}
+{"level":"info","timestamp":"2025-06-02T01:12:29.008+0300","caller":"app/app.go:65","msg":"Shutting down server...","pid":4361}
+{"level":"info","timestamp":"2025-06-02T01:12:29.008+0300","caller":"server/server.go:42","msg":"Shutdown completed before timeout.","pid":4361}
