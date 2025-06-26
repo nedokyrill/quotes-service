@@ -3,11 +3,9 @@ package app
 import (
 	"context"
 	"github.com/gorilla/mux"
-	"github.com/nedokyrill/quotes-service/internal/api/quoteHandlers"
-	"github.com/nedokyrill/quotes-service/internal/repository/quoteRepository"
 	"github.com/nedokyrill/quotes-service/internal/server"
-	"github.com/nedokyrill/quotes-service/internal/services/quotesService"
 	"github.com/nedokyrill/quotes-service/pkg/logger"
+	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
@@ -34,20 +32,23 @@ func Run() {
 	//logger.Logger.Info("Connected to database successfully")
 	//defer conn.Close()
 
-	// Init repositories
-	quotesRepo := quoteRepository.NewQuoteRepository(conn)
-
-	// Init services
-	quotesServ := quotesService.NewQuotesService(quotesRepo)
-
-	// Init handlers
-	quotesHand := quoteHandlers.NewQuoteHandler(quotesServ)
+	//// Init repositories
+	//quotesRepo := quoteRepository.NewQuoteRepository(conn)
+	//
+	//// Init services
+	//quotesServ := quotesService.NewQuotesService(quotesRepo)
+	//
+	//// Init handlers
+	//quotesHand := quoteHandlers.NewQuoteHandler(quotesServ)
 
 	// Init default route
 	router := mux.NewRouter()
+	router.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
+		w.Write([]byte("pong"))
+	}).Methods("GET")
 
 	// Register routes
-	quotesHand.RegisterRoutes(router)
+	//quotesHand.RegisterRoutes(router)
 
 	// Init n conf API server
 	srv := server.NewAPIServer(router)
@@ -63,7 +64,7 @@ func Run() {
 	logger.Logger.Info("Shutting down server...")
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
-	if err = srv.Shutdown(ctx); err != nil {
+	if err := srv.Shutdown(ctx); err != nil {
 		logger.Logger.Fatalw("Shutdown error",
 			"error", err)
 	}
