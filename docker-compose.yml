@@ -5,7 +5,7 @@ services:
   api-quotes-server:
     build:
       context: .
-      dockerfile: ./build/main/Dockerfile
+      dockerfile: build/app/Dockerfile
     image: api-quotes-server
     deploy:
       resources:
@@ -15,7 +15,7 @@ services:
         reservations:
           memory: 4G
     container_name: api-quotes-server
-    command: ["sh", "-c", "go run /usr/src/app/cmd/app/main.go"]
+    command: ["sh", "-c", "go run /usr/src/app/cmd/app/app.go"]
     ports:
       - "8080:8080"
     networks:
