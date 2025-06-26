@@ -61,6 +61,7 @@ jobs:
           host: ${{ secrets.PROD_IP }}
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key_path: /home/runner/.ssh/id_rsa_github
           port: 22
           script: |
             cd ~/test_cicd
