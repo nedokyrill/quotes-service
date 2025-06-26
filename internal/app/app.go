@@ -43,7 +43,7 @@ func Run() {
 
 	// Init default route
 	router := mux.NewRouter()
-	router.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
+	router.HandleFunc("/random", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("pong"))
 	}).Methods("GET")
 
