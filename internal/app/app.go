@@ -3,8 +3,6 @@ package app
 import (
 	"context"
 	"github.com/gorilla/mux"
-	"github.com/jackc/pgx/v5/pgxpool"
-	"github.com/joho/godotenv"
 	"github.com/nedokyrill/quotes-service/internal/api/quoteHandlers"
 	"github.com/nedokyrill/quotes-service/internal/repository/quoteRepository"
 	"github.com/nedokyrill/quotes-service/internal/server"
@@ -21,20 +19,20 @@ func Run() {
 	logger.InitLogger()
 	defer logger.Logger.Sync()
 
-	// Load environment
-	err := godotenv.Load()
-	if err != nil {
-		logger.Logger.Fatal("Error loading .env file")
-	}
-
-	// Init postgres
-	conn, err := pgxpool.New(context.Background(), os.Getenv("POSTGRESQL_URL"))
-	if err != nil {
-		logger.Logger.Fatal("Unable to connect to database: %v\n", err)
-		os.Exit(1)
-	}
-	logger.Logger.Info("Connected to database successfully")
-	defer conn.Close()
+	//// Load environment
+	//err := godotenv.Load()
+	//if err != nil {
+	//	logger.Logger.Fatal("Error loading .env file")
+	//}
+	//
+	//// Init postgres
+	//conn, err := pgxpool.New(context.Background(), os.Getenv("POSTGRESQL_URL"))
+	//if err != nil {
+	//	logger.Logger.Fatal("Unable to connect to database: %v\n", err)
+	//	os.Exit(1)
+	//}
+	//logger.Logger.Info("Connected to database successfully")
+	//defer conn.Close()
 
 	// Init repositories
 	quotesRepo := quoteRepository.NewQuoteRepository(conn)
