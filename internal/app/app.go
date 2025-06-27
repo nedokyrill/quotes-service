@@ -3,6 +3,7 @@ package app
 import (
 	"context"
 	"github.com/gorilla/mux"
+	"github.com/joho/godotenv"
 	"github.com/nedokyrill/quotes-service/internal/server"
 	"github.com/nedokyrill/quotes-service/pkg/logger"
 	"net/http"
@@ -17,11 +18,11 @@ func Run() {
 	logger.InitLogger()
 	defer logger.Logger.Sync()
 
-	//// Load environment
-	//err := godotenv.Load()
-	//if err != nil {
-	//	logger.Logger.Fatal("Error loading .env file")
-	//}
+	// Load environment
+	err := godotenv.Load()
+	if err != nil {
+		logger.Logger.Fatal("Error loading .env file")
+	}
 	//
 	//// Init postgres
 	//conn, err := pgxpool.New(context.Background(), os.Getenv("POSTGRESQL_URL"))
